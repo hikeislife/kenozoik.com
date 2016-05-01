@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="sr">
+
+<head>
+
+	<title>This is kenozoik</title>
+	
+	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+	<link href='https://fonts.googleapis.com/css?family=Oldenburg' rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript" language="javascript" src="naSlovoA.js"></script>
+
+	<meta charset="UTF-8">
+	<meta name="msvalidate.01" content="0D8174E07861F9331A7FD037B0AE6A3D" />
+	<meta name="description" content="kenozoik, novi život, reči koje počinju na slovo a">
+	<meta name="keywords" content="kenozoik">
+	<meta name="author" content="kenozoik">
+	
+</head>
+<body>
+	
+	<div id="logo"><img src="./imgs/palm-small.png"  alt="kenozoik"></div>
+	
+	<div id="pitanje">Možeš li da navedeš jednu, izvorno srpsku reč, koja počinje na slovo <span class="asparagus">"A"</span>?</div>
+
+	<div id="search">
+    	<div id="search_holder">
+    		<form id="slovoA">
+    			<div id="search_box"><input type="text" id="odgovor" placeholder='unesi neku reč koja počinje na slovo "A"' autofocus ></div>
+		 	<!--<div id="search_button"><input type="button" onsubmit="naSlovoA()" value="Prihvati izazov!" id="button"></div>	-->
+    			<div id="search_button"><button type="button" onClick="naSlovoA()" id="button" >Prihvati izazov!</button></div>
+    		</form>
+    	</div>
+	</div>
+
+	<script>
+	document.getElementById("search_holder").addEventListener('submit', fja);
+		
+		function fja(event) {
+		event.preventDefault();
+		naSlovoA();
+	}
+	
+	/*function naSlovoA() {
+	console.log("Im here");
+	}*/
+
+	</script>
+	<div id="move"></div>
+	<div id="rotator">
+		<p>Kada deca tek uče slova, slovo A je često propraćeno ilustracijom aviona. Međutim, avion nije srpska reč.<p>
+		<p>Možeš li ti da navedeš neku reč koja počinje na slovo "A"?</p>
+		<p>Šta misliš, zašto je Srpski jezik toliko siromašan rečima koje počinju na "prvo" slovo?</p>
+	</div>
+
+	<footer>&copy; Kenozoik 2016</footer>
+
+</body>
+</html>
