@@ -51,10 +51,10 @@ function naSlovoA() {
       	text = "<p>\"Ada\" je turcizam.";
       	break;
       	case "avet":
-      	text = "<p>\"Avet\" vuče poreklo iz reči \"videti\", baš kao i njeni sinonimi; prikaza, priviđenje. Avet je mitsko biće nalik duhu, vampiru. <p>Zanimljivost u vezi Aveti je da ih možete oterati belim lukom. U Srpskoj mitologiji beli luk nije direktno povezan sa Vampirima, ali je mit očigledno prešao sa Aveti i takav se preneo širom sveta.<p>Više o <span id\"vampir\" onclick=\"vampiri()\">Vampirima</span>.";
+      	text = "<p>\"Avet\" vuče poreklo iz reči \"videti\", baš kao i njeni sinonimi; prikaza, priviđenje. Avet je mitsko biće nalik duhu, vampiru. <p>Zanimljivost u vezi Aveti je da ih možete oterati belim lukom. U Srpskoj mitologiji beli luk nije direktno povezan sa Vampirima, ali je mit očigledno prešao sa Aveti i takav se preneo širom sveta.<p>Više o <span id=\"vampir\" onclick=\"vampiri()\">Vampirima</span>.";
       	break;
 		case "az":
-      	text = "<p>\"Az\", prvo slovo (odnosno prva reč) glagoljice, znači \"tvorac\". Glagoljica se čita kao pesma, oda bogu Svarogu, vrhovnom bogu Slovenskog panteona, i tvorcu svemira, života, i svih ostalih bogova.<p>Kako se srpski jezik razvijao paralelno sa Srpskom/Slovenskom religijom, to je slovo \"A\" ostalo rezervisano za Svaroga, i ovo se održalo i do danas, te i danas skoro da uopšte nema reči u srpskom jeziku koje počinju na \"A\".<p>više o Svarogu";
+      	text = "<p>\"Az\", prvo slovo (odnosno prva reč) glagoljice, znači \"tvorac\". Glagoljica se čita kao pesma, oda bogu Svarogu, vrhovnom bogu Slovenskog panteona, i tvorcu svemira, života, i svih ostalih bogova.<p>Kako se srpski jezik razvijao paralelno sa Srpskom/Slovenskom religijom, to je slovo \"A\" ostalo rezervisano za Svaroga, i ovo se održalo i do danas, te i danas skoro da uopšte nema reči u srpskom jeziku koje počinju na \"A\".<p>više o <span id=\"vampir\" onclick=\"svarog()\">Svarogu</span>.";
       	break;
       	default:
       	text = "<p>\"<span id=\"cap\">" + word + "</span>\" nije izvorna sprska reč.";
@@ -62,7 +62,7 @@ function naSlovoA() {
 			
 		}
 		
-  document.getElementById("rotator").innerHTML = text;
+	document.getElementById("rotator").innerHTML = text;
 }
 var vampiri = function() {
 		var vampText = "<h3>O Vampirima</h3>\
@@ -83,7 +83,15 @@ var vampiri = function() {
 		<p>Dok je Petar Blagojević vampir koji je proslavio fenomen širom evrope, a i sveta, on u srbiji danas i nije najprepoznatljivije ime. Srbi su mnogo bolje upoznati sa nešto mlađim Vampirom, Savom Savanovićem, mlinarom iz Zarožja, koji je kasnijie opevan u \"Posle devedeset godina\" Milovana Glišića, i kojim je inspirisan ozloglašeni Srpski horor \"Leptirica\".</p>\
 		<h3>Uzgredni komentar</h3>\
 		<p>Postoje samo dve Srpske reči koje su ušle u glabalni rečnik, takve da u kom god delu sveta da se nađete, ako ih izgovorite, svi će znati na šta mislite. Jedna od njih je Vampir. Da li možete da pogodite koja je druga?</p>\
-		<p>Druga Srpska \"Mitska Bića\" koja su ostavila stvarnog traga na istoriju</p>";
+		<p>Druga Srpska \"<span id=\"vampir\" onclick=\"milosObilic()\">Mitska Bića</span>\" koja su ostavila stvarnog traga na istoriju</p>";
 		document.getElementById('rotator').innerHTML = vampText;
 		
 	};
+var svarog = function(){
+		var svarogText = "<p>U izradi</p>";
+		document.getElementById('rotator').innerHTML = svarogText;
+}
+var milosObilic = function(){
+		var milosObilicText = "<p>U izradi</p>";
+		document.getElementById('rotator').innerHTML = milosObilicText;
+}

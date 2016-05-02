@@ -29,6 +29,14 @@ body {
 .batak {
 	color: #e6992b;
  }
+ #vampir {
+
+	text-decoration: underline;
+ }
+ #vampir:hover {
+	color: #e6992b;
+	 
+ }
 #search {
 	border: 3px #ccc solid;
 	margin: auto;
