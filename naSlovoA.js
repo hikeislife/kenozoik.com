@@ -88,7 +88,8 @@ var vampiri = function() {
 		
 	};
 var svarog = function(){
-		var svarogText = "<p>U izradi</p>";
+		var svarogText = "<h3>U izradi</h3>\
+		<p>U izradi</p>";
 		document.getElementById('rotator').innerHTML = svarogText;
 }
 var milosObilic = function(){
