@@ -10,16 +10,10 @@ function naSlovoA() {
 		words = document.getElementById("odgovor").value,
 		word = words.toLowerCase(),
 		aword = word.charAt(0),
-  	  	bword = word.length,
-		nword = word.includes(0,1,2,3,4,5,6,7,8,9);
-		
-	
-
+  	  	bword = word.length;
 	
 	if ( word === "" ) {text = "<p>Prvo ukucaj reč.<p>"} //provera da li je reč prisutna
 		
-	else if (nword) { text = "Reči se ne pišu brojevima."}
-	
   	else if (aword !== "a") { // provera da li reč počinje na slovo a
   	  	text = "<p>reč mora da počne na slovo A.<p>"; }
 			
