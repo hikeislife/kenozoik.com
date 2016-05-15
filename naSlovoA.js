@@ -1,11 +1,14 @@
 // na slovo A skriptica
 // kenozoik
 
-
-
+	document.getElementById("search_holder").addEventListener('submit', naSlovoA);
+		
+	document.getElementById("button").addEventListener('click', naSlovoA);
+	
 function naSlovoA() {
 	
-	// deklarisanje varijabli
+	event.preventDefault();
+	
   	var text,
 		words = document.getElementById("odgovor").value,
 		word = words.toLowerCase(),

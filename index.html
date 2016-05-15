@@ -8,9 +8,6 @@
 	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
 	<link href='https://fonts.googleapis.com/css?family=Oldenburg' rel='stylesheet' type='text/css'>
 
-	<script type="text/javascript" language="javascript" src="naSlovoA.js"></script>
-	<script type="text/javascript" language="javascript" src="copid.js"></script>
-
 	<meta charset="UTF-8">
 	<meta name="msvalidate.01" content="0D8174E07861F9331A7FD037B0AE6A3D" />
 	<meta name="description" content="kenozoik, novi život, reči koje počinju na slovo a">
@@ -18,7 +15,7 @@
 	<meta name="author" content="kenozoik">
 	
 </head>
-<body onload="copid()">
+<body>
 	
 	<div id="logo"><img src="./imgs/palm-small.png"  alt="kenozoik"></div>
 	
@@ -28,21 +25,11 @@
     	<div id="search_holder">
     		<form id="slovoA">
     			<div id="search_box"><input type="text" id="odgovor" placeholder='unesi neku reč koja počinje na slovo "A"' autofocus ></div>
-		 	<!--<div id="search_button"><input type="button" onsubmit="naSlovoA()" value="Prihvati izazov!" id="button"></div>	-->
-    			<div id="search_button"><button type="button" onClick="naSlovoA()" id="button" >Prihvati izazov!</button></div>
+    			<div id="search_button"><button type="button" id="button" >Prihvati izazov!</button></div>
     		</form>
     	</div>
 	</div>
 
-	<script>
-	document.getElementById("search_holder").addEventListener('submit', fja);
-		
-		function fja(event) {
-		event.preventDefault();
-		naSlovoA();
-	}
-	
-	</script>
 	<div id="move"></div>
 	<div id="rotator">
 		<p>Kada deca tek uče slova, slovo A je često propraćeno ilustracijom aviona. Međutim, avion nije srpska reč.<p>
@@ -51,6 +38,9 @@
 	</div>
 
 	<footer id="footer"></footer>
+
+	<script type="text/javascript" language="javascript" src="copid.js"></script>
+	<script type="text/javascript" language="javascript" src="naSlovoA.js"></script>
 
 </body>
 </html>
