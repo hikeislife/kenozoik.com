@@ -36,6 +36,12 @@ switch(word) {
     case "ako":
     text = "<p>\"Ako\" je rečca, treba vam reč.";
     break;
+    case "askurđel":
+    text = "<p>vidi \"Askurđela\".";
+    break;
+    case "askurđela":
+    text = "<p>\"Askurđela\" je baba udaljena sedam kolena. Najstariji pisani zapis je iz 18-og veka, gde se preci do 16 kolena u nazad navode kao dokaz da mladenci nisu u srodstvu";
+    break;
     case "azbuka":
     text = "<p>\"Azbuka\" je kovanica Vuka Stefanovića Karadžića, iz 19-og veka. Reč predstavlja prva dva slova (prve dve reči) glagoljice, \"Az\", i \"Buki\".";
     break;
