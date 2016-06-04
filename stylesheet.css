@@ -1,22 +1,21 @@
 /*-- KENOZOIK --*/
 body {
-  background-color: #595959;
-  font-family: 'Verdana', sans-serif;
-  font-size: 16px;
-  color: #fff;
-  text-align: center;
+	background-color: #595959;
+	font-family: 'Verdana', sans-serif;
+	font-size: 150%;
+	color: #fff;
+	text-align: center;
 }
 #logo {
 	padding-top: 25px;
 	border: 0px;
-	width: 150px;
-	height: 177px;
+	width: 100%;
+	height: 100%;
 	margin: auto;
 }
 #pitanje {
-	padding-top: 25px;
-	padding-bottom: 25px;
-	font-size: 26px;
+	padding: 25px 0;
+	font-size: 120%;
 	font-family: 'Oldenburg', sans-serif;
 	color: #fff;
 }
@@ -30,12 +29,10 @@ body {
 	color: #e6992b;
  }
  #vampir {
-
 	text-decoration: underline;
  }
  #vampir:hover {
 	color: #e6992b;
-	 
  }
 #search {
 	border: 3px #ccc solid;
@@ -60,6 +57,7 @@ body {
 	border-radius: 5px;
 	border: 2px solid #404040;
 	padding-bottom: 5px;
+	z-index: 2;
 }
 input[type=text] {
 	width: 310px;
@@ -93,7 +91,7 @@ input[type=text]:focus { /*-- da se ne pojavi plavi okvir kad se klikne u polje 
 #cap {
 	text-transform:capitalize;
 }
-#move {
+.move {
 	padding-top: 50px;
 }
 #rotator {
@@ -106,3 +104,62 @@ input[type=text]:focus { /*-- da se ne pojavi plavi okvir kad se klikne u polje 
 	border: 2px solid #e6992b;
 	overflow: auto;
 	}
+
+@media screen and (max-width: 900px) { /*-- 150% zoom --*/
+	#logo {
+		margin: auto;
+		width: 20%;
+		height: 20%;
+	}
+	#search {
+		width: 100%;
+	}
+	.move {
+		padding-top: 10px;
+	}
+	#pitanje {
+		padding: 5px 0;
+	}
+
+@media screen and (max-width: 620px) { /*-- 250% zoom --*/
+	#pitanje {
+		font-size: 75%;
+	}
+	#rotator {
+		width: 90%;
+		overflow: none;
+		height: 100%;
+	}
+	.move {
+		padding-top: 5px;
+	}
+	#search {
+		background-color: transparent;
+		border: 0;
+		width: 100%;
+		box-shadow: 0px 0px;
+		border-radius: 0px;
+	}
+	#search_holder {
+		width: 100%;
+	}
+	input[type=text] {
+		width: 80%;
+		padding-left: 7px;
+	}
+	#search_button {
+		display: block;
+		margin-top: 10px;
+		width: 100%;
+	}
+	#button {
+		width: 82%;
+	}
+}
+
+@media screen and (max-width: 500px) { /*-- 300% zoom --*/
+	#logo {
+		display: none;
+	}
+	
+}
